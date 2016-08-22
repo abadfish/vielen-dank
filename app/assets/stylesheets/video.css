@@ -1,0 +1,61 @@
+#video-background {
+/*  making the video fullscreen  */
+  position: absolute;
+  display: block;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: initial;
+  height: auto;
+  z-index: 1;
+  margin: 0 auto;
+  object-fit: cover;
+  padding: 0;
+}
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    background: url('pink-flowers-pan.png') center center / cover no-repeat;
+
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+	    transform: translate(-50%, -50%);
+}
+
+.brightness {
+    -webkit-filter: brightness(.5);
+    filter: brightness(.5);
+}
+
+.blur {
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+}
+
+@media (max-width: 767px) {
+    .fullscreen-bg {
+        background: url('/first-frame.png') center center / cover no-repeat;
+    }
+
+    .fullscreen-bg__video {
+        display: none;
+    }
+}
