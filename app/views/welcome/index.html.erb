@@ -1,8 +1,21 @@
-<%= vider_tag 'assets/videos/pink-flowers-pan.mp4', position: '100% 100%' %>
 <section class="container">
 
+  <!-- Adjust video height and width -->
 
-    
+  <div id="block" style="width: 100%; height: 500px;" data-vide-bg="assets/videos/pink-flowers-pan" data-vide-options="position: 0% 50%"></div>
+
+  <br><br>
+
+<!-- Embed Video as Background-->
+  <div id="block2" style="width: 100%; height: 500px;"
+    data-vide-bg="mp4: assets/videos/pink-flowers-pan, webm: assets/videos/pink-flowers-pan, poster: assets/images/first-frame"
+    data-vide-options="position: 0% 50%">
+  </div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../libs/jquery/dist/jquery.min.js"><\/script>')</script>
+<script src="../src/jquery.vide.js"></script>
+
 
   <div class="wrapper">
     <div class="grow hover" id="content">
